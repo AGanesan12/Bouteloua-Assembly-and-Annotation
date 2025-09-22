@@ -48,21 +48,20 @@ p <- ggplot(df, aes(x = species, y = pctMasked, fill = class)) +
   scale_y_continuous(labels = percent_format(accuracy = 1),
                      expand = expansion(mult = c(0, 0.05))) +
   labs(
-    title = "TE composition by superfamily",
     x = "Species",
-    y = "% of genome masked",
+    y = "% of Genome Masked",
     fill = "Superfamily"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 14) +
   theme(
-    plot.title = element_text(face = "bold", hjust = 0, size = 12, margin = margin(b = 6)),
-    axis.title = element_text(size = 11),
-    axis.text = element_text(color = "black"),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text  = element_text(color = "black", size = 13),
     panel.grid.major.x = element_blank(),
-    panel.grid.minor = element_blank(),
-    legend.position = "right",
-    legend.key.height = unit(0.5, "cm"),
-    legend.text = element_text(size = 9)
+    panel.grid.minor   = element_blank(),
+    legend.position    = "right",
+    legend.key.height  = unit(0.6, "cm"),
+    legend.text        = element_text(size = 12),
+    legend.title       = element_text(size = 14, face = "bold")
   )
 
 # Save
