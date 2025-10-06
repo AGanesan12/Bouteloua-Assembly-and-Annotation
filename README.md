@@ -1,6 +1,6 @@
 # Bouteloua Assembly and Annotation
 
-This repository contains code and scripts developed by **Mathavan A Ganesan** for the paper:  
+This repository contains code and scripts developed by **Mathavan A. Ganesan** for the paper:  
 
 **High-Quality Draft Genome Assemblies and Comparative Genomics of Three *Bouteloua* Species (Poaceae: Chloridoideae)**  
 
