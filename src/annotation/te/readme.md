@@ -1,5 +1,5 @@
-Annotate and summarize transposable elements (TEs) across the three Bouteloua genomes
-
+**Annotate and summarize transposable elements (TEs) across the three Bouteloua genomes
+**
 1. Run `panedta_batch.sh <genome_list.txt> [threads=128] [cds.fa]` to run panEDTA across all genomes listed in `genome_list.txt`. Pass a CDS fasta as the third argument to mask out coding sequence during annotation; otherwise panEDTA runs without it.
 2. Run `te_percent_masked.sh <species1.tbl> [species2.tbl ...]` on the `*.fasta.mod.panEDTA.tbl` reports produced by panEDTA to pull out the overall percent of each genome masked. Outputs a two-column (species, % masked) table to stdout.
 3. Build a per-superfamily percent-masked table (columns: `species`, `class`, `bpMasked`, `pctMasked`) from the panEDTA outputs, then run `Rscript plot_te_composition.R input.tsv output.pdf` to generate a stacked barplot of TE composition (% of genome masked) by superfamily across species.
