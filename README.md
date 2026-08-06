@@ -18,9 +18,6 @@ Genome assemblies and annotations are deposited on Figshare:
 
 Raw PacBio HiFi sequencing reads: [BioProject accession pending]
 
-License
-Released under the MIT License. See LICENSE for details.
-
 ---
 
 ## License
